@@ -15,10 +15,10 @@ const sections = [
         title: 'Innovative Systems, Riyadh',
         url: 'https://isys.sa',
         logo: 'isys.png',
-        subtitle: 'Senior Firmware Engineer — Aug 2023 – Present',
+        subtitle: 'Firmware Engineer — Aug 2023 – Present',
         points: [
           'Developed embedded Linux images using Yocto Project for TI Sitara AM335x (ARM Cortex-A8) processors, customizing systems with essential packages.',
-          'Designed and implemented firmware for protection relays on TI MSP430 microcontrollers, ensuring compliance with IEC 61850 protocols.',
+          'Designed and implemented firmware for protection relays on TI MSP430 microcontrollers.',
           'Optimized device drivers (DMA, SPI, I2C) for low-latency communication and efficient interrupt handling.',
           'Developed USB-based bootloaders and remote firmware update mechanisms for efficient updates.',
           'Integrated MODBUS and RS485 protocols for reliable communication in industrial systems.',
@@ -29,7 +29,7 @@ const sections = [
         title: 'Krämer Automotive Systems, Islamabad',
         url: 'https://kraemer-automotive.com',
         logo: 'kr.png',
-        subtitle: 'Senior Embedded Software Engineer — Sep 2022 – Aug 2023',
+        subtitle: 'Embedded Software Engineer — Sep 2022 – Aug 2023',
         points: [
           'Developed firmware for vehicle infotainment systems using NXP S32K and STM32 (ARM Cortex-M) microcontrollers.',
           'Implemented a four-zone HVAC system with modular RTOS tasks, using queues, semaphores, and mutexes for inter-task communication.',
@@ -88,7 +88,7 @@ const sections = [
     categories: [
       {
         name: 'Programming Languages',
-        tags: ['C/C++', 'Python', 'Java', 'Linux (Bash/Shell)']
+        tags: ['C/C++', 'Python', 'Java', 'Linux (Bash/Shell)', 'MATLAB', 'JavaScript', 'HTML/CSS', 'RUST']
       },
       {
         name: 'Microcontrollers',
@@ -100,7 +100,7 @@ const sections = [
       },
       {
         name: 'Communication Protocols',
-        tags: ['CAN', 'UART', 'SPI', 'I2S', 'MODBUS', 'RS485', 'I2C']
+        tags: ['CAN', 'UART', 'SPI', 'I2S', 'MODBUS', 'RS485', 'I2C', 'DNP3', 'TCP/IP', 'HTTP', 'MQTT']
       },
       {
         name: 'Debuggers',
