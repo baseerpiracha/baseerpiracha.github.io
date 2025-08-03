@@ -1,4 +1,4 @@
-// Data Model
+// Data Model 
 const sections = [
   {
     id: 'about',
@@ -13,6 +13,8 @@ const sections = [
     cards: [
       {
         title: 'Innovative Systems, Riyadh',
+        url: 'https://isys.sa',  // Company link here
+        logo: 'isys.png',  // <-- your logo URL here
         subtitle: 'Senior Firmware Engineer — Aug 2023 – Present',
         points: [
           'Developed relay firmware on TI MSP430',
@@ -21,7 +23,9 @@ const sections = [
         ]
       },
       {
-        title: 'Krämer Automotive, Islamabad',
+        title: 'Krämer Automotive Systems, Islamabad',
+        url: 'https://kraemer-automotive.com',
+        logo: 'kr.png',  // <-- your logo URL here
         subtitle: 'Embedded Software Engineer — Sep 2022 – Aug 2023',
         points: [
           'Worked on infotainment for Bentley & eGo',
@@ -30,8 +34,10 @@ const sections = [
         ]
       },
       {
-        title: 'Crypto Research and Development Center',
-        subtitle: 'Embedded Software Lead — 2019 – 2022',
+        title: 'Crypto Research & Development Center',
+        url: 'https://nastp.gov.pk/',
+        logo: 'crdc.png',  // <-- your logo URL here
+        subtitle: 'Embedded Software Lead — April 2019 – Aug 2022',
         points: [
           'Led embedded projects on STM32, ESP32',
           'Secure communication firmware with AES-256, SHA-256',
@@ -92,7 +98,24 @@ sections.forEach(section => {
       cardDiv.classList.add('exp-card');
 
       const title = document.createElement('h3');
-      title.textContent = card.title;
+      if(card.logo){
+        const img = document.createElement('img');
+        img.src = card.logo;
+        img.alt = `${card.title} logo`;
+        img.classList.add('company-logo');
+        cardDiv.appendChild(img);
+      }
+      if(card.url){
+        const link = document.createElement('a');
+        link.href = card.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = card.title;
+        link.classList.add('company-link');
+        title.appendChild(link);
+      } else {
+        title.textContent = card.title;
+      }
       cardDiv.appendChild(title);
 
       const sub = document.createElement('span');

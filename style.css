@@ -152,7 +152,7 @@ nav ul li:hover {
 /* Sections base style */
 section.section {
   padding: 80px 4vw;
-  max-width: 960px;
+  max-width: 1500px;
   margin: 0 auto 100px;
   background: #181818cc;
   border-radius: 12px;
@@ -175,43 +175,77 @@ section p {
 
 /* Experience cards */
 .exp-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .exp-card {
+  display: flex;
+  align-items: center;
   background: linear-gradient(135deg, #3a86ffdd, #8338ecdd);
   padding: 1.5rem 2rem;
   border-radius: 15px;
   color: white;
   box-shadow: 0 8px 25px #3a86ff99;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .exp-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 15px 40px #ffd166cc;
 }
 
+.company-logo {
+  flex-shrink: 0;
+  width: 150px;   /* Adjust width */
+  height: auto;
+  margin-right: 2rem;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover .company-logo {
+  transform: scale(1.1);
+}
+
 .exp-card h3 {
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.3rem 0;
+  font-size: 1.5rem;
+}
+
+.company-link {
+  color: #ffd166;
+  text-decoration: none;
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.company-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .exp-card span {
-  font-weight: 600;
-  color: #ffd166cc;
-  font-size: 0.9rem;
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  opacity: 0.85;
 }
 
 .exp-card ul {
-  margin-top: 1rem;
-  list-style: inside disc;
-  font-size: 1rem;
-  color: #eee;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.exp-card ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
 }
 
 /* Skills tags */
