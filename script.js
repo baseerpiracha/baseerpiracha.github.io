@@ -329,7 +329,7 @@ document.addEventListener('click', (e) => {
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
   if (window.scrollY > 50) {
-    header.style.background = 'linear-gradient(90deg, #2C3E50, #3498DB)';
+    header.style.background = 'linear-gradient(90deg, #3498DB, #2C3E50)';
     header.style.boxShadow = '0 2px 15px rgba(52, 152, 219, 0.5)';
   } else {
     header.style.background = 'linear-gradient(90deg, #1A252F, #2C3E50)';
