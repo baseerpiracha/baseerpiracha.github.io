@@ -3,7 +3,7 @@ const sections = [
   {
     id: 'about',
     title: 'About Me',
-    content: `I'm an Embedded Software Engineer with over 6 years of experience in developing robust firmware for safety-critical and resource-constrained systems in automotive, industrial automation, and defense applications. Proficient in C/C++, Python, and modern software engineering practices, I specialize in RTOS (FreeRTOS, Zephyr), embedded Linux (Yocto, Buildroot), and communication protocols (CAN, SPI, I2C, UART, MODBUS). I have hands-on expertise in hardware-software integration, low-level driver development, and compliance with functional safety standards like MISRA C, ISO 26262, and ANSI C. Adept at version control (Git), CI/CD pipelines, and Agile methodologies, I thrive in cross-functional teams delivering high-quality solutions from concept to production. I am actively seeking opportunities to contribute to innovative embedded systems projects.`,
+    content: `Senior Embedded & Firmware Engineer with 7+ years of experience in automotive, telematics, industrial automation, and secure embedded systems. Specialized in CAN bus reverse engineering, protection relay firmware, and real-time embedded software development. Strong hands-on expertise in C/C++, Python, RTOS (FreeRTOS), embedded Linux (Yocto), and communication protocols including CAN, LIN, J1939, OBD-II, MODBUS, SPI, I2C, and UART. Experienced in ISO 26262, MISRA C, ANSI protection standards, and large-scale field deployments. Currently working in Riyadh on vehicle data, fleet telematics, and real-time embedded systems.`,
     type: 'text'
   },
   {
@@ -12,50 +12,62 @@ const sections = [
     type: 'cards',
     cards: [
       {
-        title: 'Innovative Systems, Riyadh',
-        url: 'https://isys.sa',
-        logo: 'isys.png',
-        subtitle: 'Firmware Engineer — Aug 2023 – Present',
+        title: 'AFAQY CO IT, Riyadh',
+        url: 'https://www.afaqy.com',
+        logo: 'afaqy.jpeg',
+        subtitle: 'Sr. R&D Engineer — Sep 2025 – Present',
         points: [
-          'Developed embedded Linux images using Yocto Project for TI Sitara AM335x (ARM Cortex-A8) processors, customizing systems with essential packages.',
+          'Reverse engineered CAN bus messages for Toyota, Hyundai, MG, Chevrolet, and Ford vehicles.',
+          'Sniffed and decoded CAN traffic using CANalyzer, SavvyCAN, Vehicle Spy, and Python tools.',
+          'Created and validated custom DBC files for telematics integration.',
+          'Developed Xirgo and Galileosky scripts for real-time vehicle diagnostics and fleet analytics.',
+          'Integrated BLE sensors and parsed advertisement and payload data.',
+          'Worked with OBD-II, J1939, and proprietary vehicle protocols.',
+          'Implemented vehicle event detection such as harsh braking, overspeed, and geofencing.',
+          'Led field testing and large-scale deployments across Saudi Arabia.'
+        ]
+      },
+      {
+        title: 'Innovative Systems, Riyadh',
+        url: 'https://www.isys.sa',
+        logo: 'isys.png',
+        subtitle: 'Sr. Firmware Engineer — Aug 2023 – Sep 2025',
+        points: [
           'Designed and implemented firmware for protection relays on TI MSP430 microcontrollers.',
-          'Optimized device drivers (DMA, SPI, I2C) for low-latency communication and efficient interrupt handling.',
-          'Developed USB-based bootloaders and remote firmware update mechanisms for efficient updates.',
-          'Integrated MODBUS and RS485 protocols for reliable communication in industrial systems.',
-          'Conducted rigorous testing on live power systems to ensure stability and compliance.'
+          'Implemented ANSI 49 / 50 / 51 / 52 protection algorithms.',
+          'Developed secure bootloaders and firmware upgrade mechanisms.',
+          'Integrated MODBUS and RS485 communication stacks.',
+          'Implemented event logging, fault diagnostics, and oscillography.',
+          'Built embedded Linux images using Yocto Project (BeagleBone Black).',
+          'Performed EMI/EMC testing and live power system validation.'
         ]
       },
       {
         title: 'Krämer Automotive Systems, Islamabad',
-        url: 'https://kraemer-automotive.com',
+        url: 'https://www.kraemer-automotive.com',
         logo: 'kr.png',
-        subtitle: 'Embedded Software Engineer — Sep 2022 – Aug 2023',
+        subtitle: 'Sr. Embedded Software Engineer — Sep 2022 – Aug 2023',
         points: [
-          'Developed firmware for vehicle infotainment systems using NXP S32K and STM32 (ARM Cortex-M) microcontrollers.',
-          'Implemented a four-zone HVAC system with modular RTOS tasks, using queues, semaphores, and mutexes for inter-task communication.',
-          'Designed multi-tasking RTOS architecture with precise timing using vTaskDelayUntil() and task prioritization, ensuring deterministic operation.',
-          'Enhanced system reliability by 40% through CAN communication and signal timeout logic.',
-          'Developed secure boot and bootloader mechanisms for programmer-less MCU firmware updates.',
-          'Debugged and validated CAN data using Microchip CAN Analyzer and Vector CANalyzer.',
-          'Contributed to Android-based infotainment features, achieving 98% test coverage with JUnit.',
-          'Applied ISO 26262 standards for functional safety in automotive software development.'
+          'Developed firmware for automotive infotainment and instrument clusters.',
+          'Worked on NXP S32K and STM32 (ARM Cortex-M) platforms.',
+          'Implemented CAN, LIN, and UART communication stacks.',
+          'Developed secure bootloaders for OTA and USB updates.',
+          'Performed vehicle-level and HIL testing.',
+          'Ensured ISO 26262 functional safety compliance.'
         ]
       },
       {
         title: 'Crypto Research & Development Center, Islamabad',
-        url: 'https://nastp.gov.pk/',
+        url: 'www.https://nastp.gov.pk/',
         logo: 'crdc.png',
         subtitle: 'Embedded Software Lead — Apr 2019 – Aug 2022',
         points: [
-          'Led design, development, and testing of embedded systems, ensuring on-time delivery of secure firmware projects.',
-          'Reverse-engineered radio protocols using a logic analyzer to implement secure communication firmware with AES-256, DES, and SHA-256.',
-          'Developed image classification on Raspberry Pi using TensorFlow Lite for on-device AI object detection.',
-          'Designed systems compliant with FIPS 140-2, ensuring high-security standards.',
-          'Integrated BLE and Wi-Fi protocols, enhancing system connectivity.',
-          'Implemented CVSD audio encoding, reducing bandwidth usage by 30%.',
-          'Utilized UART, SPI, I2C, and I2S for efficient device communication.',
-          'Developed firmware using C/C++ and Python, reducing testing time by 25%.',
-          'Created schematics and PCB layouts in Altium and OrCAD, improving design accuracy.'
+          'Led secure embedded firmware projects for defense-grade systems.',
+          'Reverse engineered communication protocols using logic analyzers and SDR tools.',
+          'Implemented AES-256, SHA-256, and HMAC-based secure communication stacks.',
+          'Developed low-power embedded firmware on AVR, ESP32, and ARM platforms.',
+          'Built embedded AI applications using TensorFlow Lite on Raspberry Pi.',
+          'Designed schematics and PCB layouts using Altium and OrCAD.'
         ]
       }
     ]
@@ -88,27 +100,27 @@ const sections = [
     categories: [
       {
         name: 'Programming Languages',
-        tags: ['C/C++', 'Python', 'Java', 'Linux (Bash/Shell)', 'MATLAB', 'JavaScript', 'HTML/CSS', 'RUST']
+        tags: ['C/C++', 'Python', 'Bash', 'JavaScript', 'HTML/CSS']
       },
       {
-        name: 'Microcontrollers',
-        tags: ['TI MSP430', 'Atmel (8 & 32-bit)', 'NXP S32K', 'STM32', 'Beaglebone Black', 'Raspberry Pi', 'ESP32', 'Arduino']
+        name: 'Microcontrollers & SoCs',
+        tags: ['TI MSP430', 'STM32', 'NXP S32K', 'ESP32', 'AVR', 'BeagleBone Black', 'Raspberry Pi']
       },
       {
         name: 'Operating Systems',
-        tags: ['Yocto', 'Linux', 'FreeRTOS']
+        tags: ['FreeRTOS', 'Embedded Linux', 'Yocto']
       },
       {
         name: 'Communication Protocols',
-        tags: ['CAN', 'UART', 'SPI', 'I2S', 'MODBUS', 'RS485', 'I2C', 'DNP3', 'TCP/IP', 'HTTP', 'MQTT']
+        tags: ['CAN', 'CAN FD', 'LIN', 'J1939', 'OBD-II', 'UART', 'SPI', 'I2C', 'MODBUS', 'RS485', 'BLE']
       },
       {
-        name: 'Debuggers',
-        tags: ['TI MSP-FET', 'ST-Link', 'Atmel ICE', 'Ozone J-Link', 'Logic Analyzer', 'CANoe', 'CAN Bus Analyzer']
+        name: 'Tools & Debugging',
+        tags: ['CANalyzer', 'CANoe', 'SavvyCAN', 'Vehicle Spy', 'Logic Analyzer', 'J-Link', 'ST-Link']
       },
       {
-        name: 'Project Management',
-        tags: ['JIRA', 'SVN', 'Confluence', 'Git']
+        name: 'DevOps & Management',
+        tags: ['Git', 'GitHub Actions', 'Jenkins', 'JIRA', 'Confluence']
       }
     ]
   },
@@ -117,6 +129,21 @@ const sections = [
     title: 'Projects',
     type: 'cards',
     cards: [
+      {
+        title: 'Vehicle CAN Reverse Engineering',
+        points: [
+          'Decoded OEM vehicle CAN signals.',
+          'Generated DBC files for telematics systems.',
+          'Validated signals via live vehicle testing.'
+        ]
+      },
+      {
+        title: 'Protection Relay Firmware (MSP430)',
+        points: [
+          'Implemented ANSI protection algorithms.',
+          'Developed fault logging and oscillography.'
+        ]
+      },
       {
         title: 'OFDM-based Transceiver using USRP in LabVIEW',
         subtitle: 'BS Electrical Engineering Final Year Project — COMSATS University',
@@ -135,7 +162,6 @@ const sections = [
     table: [
       { language: 'Urdu', listening: 'Native', reading: 'Native', spoken_production: 'Native', spoken_interaction: 'Native', writing: 'Native' },
       { language: 'English', listening: 'C1', reading: 'C1', spoken_production: 'C1', spoken_interaction: 'C1', writing: 'C1' },
-      { language: 'German', listening: 'A1', reading: 'A1', spoken_production: 'A1', spoken_interaction: 'A1', writing: 'A1' }
     ]
   },
   {
