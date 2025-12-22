@@ -130,27 +130,72 @@ const sections = [
     type: 'cards',
     cards: [
       {
-        title: 'Vehicle CAN Reverse Engineering',
+        title: 'Vehicle CAN Reverse Engineering & Telematics Integration',
+        subtitle: 'AFAQY CO IT',
         points: [
-          'Decoded OEM vehicle CAN signals.',
-          'Generated DBC files for telematics systems.',
-          'Validated signals via live vehicle testing.'
+          'Reverse engineered OEM CAN messages from Toyota, Hyundai, MG, Chevrolet, and Ford vehicles.',
+          'Decoded signals such as speed, RPM, fuel level, indicators, and fault states.',
+          'Generated and validated custom DBC files for telematics platforms.',
+          'Integrated decoded signals into Xirgo and Galileosky tracking units.'
         ]
       },
       {
-        title: 'Protection Relay Firmware (MSP430)',
+        title: 'Protection Relay Firmware (ANSI Standards)',
+        subtitle: 'Innovative Systems',
         points: [
-          'Implemented ANSI protection algorithms.',
-          'Developed fault logging and oscillography.'
+          'Developed industrial protection relay firmware on TI MSP430.',
+          'Implemented ANSI 49, 50, 51, and 52 protection algorithms.',
+          'Added event logging, fault recording, and oscillography features.',
+          'Validated firmware on live power systems.'
         ]
       },
       {
-        title: 'OFDM-based Transceiver using USRP in LabVIEW',
+        title: 'Automotive Infotainment & HVAC Control System',
+        subtitle: 'Krämer Automotive Systems GmbH',
+        points: [
+          'Developed firmware for infotainment and instrument cluster ECUs.',
+          'Implemented four-zone HVAC control using RTOS-based multitasking.',
+          'Designed CAN and LIN communication stacks with timeout and diagnostics logic.',
+          'Performed vehicle-level and HIL testing for OEM validation.',
+          'Ensured ISO 26262 functional safety compliance.'
+        ]
+      },
+      {
+        title: 'Secure Bootloader & OTA Firmware Update',
+        subtitle: 'Krämer Automotive Systems GmbH',
+        points: [
+          'Designed secure bootloader supporting USB and OTA firmware updates.',
+          'Implemented firmware integrity verification and rollback protection.',
+          'Enabled programmer-less firmware upgrades in production vehicles.'
+        ]
+      },
+      {
+        title: 'Secure Embedded Communication System',
+        subtitle: 'Crypto Research & Development Center',
+        points: [
+          'Designed secure embedded systems compliant with military-grade standards.',
+          'Implemented AES-256, SHA-256, and HMAC-based secure communication stacks.',
+          'Reverse engineered proprietary communication protocols using logic analyzers.',
+          'Ensured compliance with FIPS 140-2 security requirements.'
+        ]
+      },
+      {
+        title: 'Embedded AI & Low-Power Systems',
+        subtitle: 'Crypto Research & Development Center',
+        points: [
+          'Deployed TensorFlow Lite models on Raspberry Pi for on-device AI inference.',
+          'Designed low-power firmware for battery-operated embedded devices.',
+          'Integrated BLE, Wi-Fi, UART, SPI, and I2C interfaces.',
+          'Developed CVSD-based audio communication systems.'
+        ]
+      },
+      {
+        title: 'OFDM-based Transceiver using USRP',
         subtitle: 'BS Electrical Engineering Final Year Project — COMSATS University',
         points: [
-          'Designed and implemented an Orthogonal Frequency-Division Multiplexing (OFDM) transceiver.',
-          'Utilized Universal Software Radio Peripheral (USRP) with LabVIEW for signal processing.',
-          'Achieved reliable data transmission with real-time modulation and demodulation.'
+          'Designed and implemented an OFDM transceiver using USRP and LabVIEW.',
+          'Achieved reliable real-time modulation and demodulation.',
+          'Validated performance under noisy channel conditions.'
         ]
       }
     ]
