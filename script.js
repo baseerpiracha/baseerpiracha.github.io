@@ -1,9 +1,9 @@
-// Updated Data Model with Latest CV Details
+// Latest Data Model - Updated from your CV
 const sections = [
   {
     id: 'about',
     title: 'About Me',
-    content: `Senior Embedded & Firmware Engineer with 8+ years of hands-on experience delivering high-reliability embedded systems across automotive telematics, industrial protection relays, secure communication, and Edge AI domains. Specialized in CAN bus reverse engineering, protection relay firmware, automotive infotainment, and military-grade secure embedded systems. Adept at developing real-time embedded software on ARM Cortex-M, MSP430, AVR, STM32, ESP32, NXP S32K, and NVIDIA Jetson platforms. Deep knowledge of communication protocols (CAN, LIN, J1939, OBD-II, MODBUS, SPI, I2C, UART, BLE). Experienced in ISO 26262, MISRA C, ANSI protection standards, secure boot, cryptography, and large-scale field deployments. Currently working in Riyadh on vehicle data, fleet telematics, real-time Edge AI, and computer vision solutions.`,
+    content: `Senior Embedded & Firmware Engineer with 8+ years of hands-on experience in designing, developing, and deploying high-reliability embedded systems and Edge AI solutions. Expertise spans real-time video analytics, multi-stream object detection/tracking, Edge computing on NVIDIA Jetson platforms, GPU optimization, model quantization, and deployment of computer vision pipelines. Proficient in YOLO model training/fine-tuning, multiple OCR frameworks (PaddleOCR, Tesseract), FastAPI microservices, Docker, Python, PyTorch/TensorFlow, and large-scale vision data pipelines. Strong background in automotive telematics, CAN bus reverse engineering, Embedded Linux (Yocto), real-time firmware, and safety-critical systems (ISO 26262). Proven success in delivering production-ready AI-powered solutions and cross-functional Agile projects in Saudi Arabia.`,
     type: 'text'
   },
   {
@@ -15,19 +15,18 @@ const sections = [
         title: 'AFAQY IT CO',
         url: 'https://www.afaqy.com',
         logo: 'afaqy.jpeg',
-        subtitle: 'Sr. R&D Engineer — September 2025 – Present',
+        subtitle: 'Sr. R&D Embedded Software Engineer — October 2025 – Present',
         points: [
-          'Led reverse engineering of CAN bus messages for Toyota, Hyundai, MG, Chevrolet, and Ford vehicles.',
-          'Sniffed and decoded CAN traffic using CANalyzer, SavvyCAN, Vehicle Spy, and Python tools.',
-          'Developed and validated custom DBC files for telematics integration.',
-          'Designed real-time data scripts for Xirgo and Galileosky units.',
-          'Integrated BLE sensors with advertisement and payload parsing.',
-          'Validated OBD-II, J1939, and proprietary protocols.',
-          'Developed Lua/Galileosky scripts for harsh braking and geofencing.',
-          'Led large-scale field deployments across Saudi Arabia.',
-          'Developed AI-based VIN and license plate detection using Python, YOLO, and OCR.',
-          'Implemented VIN-aware validation logic and confidence-based character fusion.',
-          'Automated batch image processing with Pandas and NumPy.'
+          'Designed, developed, and optimized real-time Edge AI computer vision solutions on NVIDIA Jetson Orin Nano using YOLO, OpenCV, and multiple OCR frameworks (PaddleOCR, Tesseract) for multi-stream video analytics including VIN detection, number plate recognition, driver behaviour/drowsiness monitoring, people counting, fire & smoke detection, and parking space determination.',
+          'Built and deployed FastAPI microservices with Docker for AI model inference, integration, and backend services supporting computer vision pipelines.',
+          'Led reverse engineering of CAN bus messages for Toyota, Hyundai, MG, Chevrolet, Ford and other vehicles; developed custom DBC files for telematics integration.',
+          'Performed CAN traffic sniffing, signal decoding, and protocol analysis using CANalyzer, SavvyCAN, Vehicle Spy, and custom Python tools.',
+          'Developed embedded software and real-time data processing logic using C and Python.',
+          'Designed, validated, and integrated embedded communication systems (CAN, CAN-FD, BLE, UART) for automotive IoT applications.',
+          'Developed Lua/Galileosky scripts for harsh braking, geofencing, and advanced fleet management logic.',
+          'Integrated BLE sensors and Xirgo/Galileosky telematics units with cloud platform.',
+          'Led large-scale field deployments and system integration across Saudi Arabia.',
+          'Prepared technical documentation, decoding reports, and automated batch image processing pipelines using Pandas and NumPy.'
         ]
       },
       {
@@ -36,14 +35,13 @@ const sections = [
         logo: 'isys.png',
         subtitle: 'Sr. Firmware Engineer — August 2023 – September 2025',
         points: [
-          'Led Yocto-based Embedded Linux development for TI Sitara AM335x (kernel, device trees, custom layers).',
-          'Designed IEC 61850-compliant real-time firmware and protection algorithms on TI MSP430.',
-          'Developed low-latency drivers (DMA, SPI, I2C, UART) and secure USB/OTA bootloaders.',
-          'Implemented Graphical Frameworks on TouchGFX for display of relay status and parameters.',
-          'Developed and optimized firmware using FreeRTOS.',
-          'Performed limited resources development with strict memory and timing constraints.',
-          'Handled integration and debugging of sub-systems and peripherals.',
-          'Automated CI/CD pipelines with Jenkins and GitHub Actions.'
+          'Designed and developed real-time firmware for protection relays on TI MSP430 microcontrollers compliant with international safety standards.',
+          'Implemented ANSI 49/50/51/52 protection algorithms, event logging, fault recording (oscillography), and real-time digital control logic.',
+          'Developed USB bootloader and remote firmware update application.',
+          'Integrated industrial communication protocols (MODBUS RTU/ASCII, RS485).',
+          'Performed comprehensive testing and validation on live power systems.',
+          'Conducted low-level debugging, performance optimization, and root-cause analysis.',
+          'Worked on IEC 61850-compliant systems with strict timing and resource constraints.'
         ]
       },
       {
@@ -52,16 +50,13 @@ const sections = [
         logo: 'kr.png',
         subtitle: 'Sr. Embedded Software Engineer — September 2022 – August 2023',
         points: [
-          'Developed firmware for infotainment systems on NXP S32K and STM32 microcontrollers.',
-          'Optimized CAN, LIN, UART stacks with error detection and diagnostics.',
-          'Developed secure bootloaders for OTA and USB updates.',
-          'Validated CAN traffic using Microchip and Vector analyzers for OEM platforms.',
-          'Implemented four-zone HVAC system with RTOS multitasking.',
-          'Worked on Android-based automotive infotainment systems for system integration.',
-          'Performed PCB debugging and hardware validation.',
-          'Ensured ISO 26262 compliance with FMEA and safety mechanisms.',
-          'Managed project lifecycle using Git, Jira, SVN, and Confluence.',
-          'Conducted vehicle-level and HIL testing.'
+          'Developed firmware for infotainment systems in Bentley and e.Go vehicles on NXP S32K and STM32 microcontrollers.',
+          'Implemented robust CAN communication stacks with timeout mechanisms and diagnostics for instrument clusters.',
+          'Designed and developed secure boot firmware and USB bootloader for OTA/USB updates.',
+          'Optimized drivers and middleware for memory, display, motor control, and HVAC systems.',
+          'Worked on Android-based automotive infotainment system integration and customization.',
+          'Performed PCB debugging, hardware validation, HIL testing, and ISO 26262 compliance activities (FMEA, safety mechanisms).',
+          'Managed project lifecycle using Jira, Confluence, Git, and SVN.'
         ]
       },
       {
@@ -70,12 +65,12 @@ const sections = [
         logo: 'crdc.png',
         subtitle: 'Embedded Software Lead — May 2021 – August 2022',
         points: [
-          'Managed R&D projects for secure modules and embedded controllers.',
-          'Led collaboration across hardware, software, RF, and QA teams.',
-          'Mentored junior engineers on embedded systems and cryptography.',
-          'Prepared technical documentation including architecture diagrams and APIs.',
-          'Oversaw compliance with FIPS 140-2 and MIL-STD-461G standards.',
-          'Deployed Python-based testing frameworks, reducing validation time by 25%.'
+          'Led full lifecycle design and development of secure embedded systems and cryptographic modules.',
+          'Mentored junior engineers and coordinated cross-functional teams (hardware, firmware, RF, QA).',
+          'Implemented cryptographic algorithms (AES-256, SHA-256, HMAC) and secure boot mechanisms.',
+          'Conducted reverse engineering of communication protocols using analyzers and SDR tools.',
+          'Oversaw compliance with FIPS 140-2, Common Criteria, and MIL-STD-461G standards.',
+          'Delivered technical presentations to stakeholders and managed project schedules & deliverables.'
         ]
       },
       {
@@ -84,16 +79,12 @@ const sections = [
         logo: 'crdc.png',
         subtitle: 'Embedded Software Engineer — April 2019 – May 2021',
         points: [
-          'Designed secure embedded systems compliant with military standards.',
-          'Reverse-engineered communication protocols using analyzers and SDR tools.',
-          'Developed cryptographic stacks using AES-256, SHA-256, and HMAC.',
-          'Engineered firmware for AVR, ESP32, and ARM-based microcontrollers.',
-          'Implemented low-power techniques for battery-powered field devices.',
-          'Built embedded applications for secure audio systems and tracking units.',
-          'Integrated UART, SPI, and CAN interfaces.',
-          'Designed secure boot mechanisms using digital signatures.',
-          'Conducted hardware design and schematic development using Altium and OrCAD.',
-          'Deployed TensorFlow Lite AI models on Raspberry Pi platforms.'
+          'Designed and implemented secure embedded firmware on AVR, ESP32, STM32, and SAM platforms.',
+          'Developed secure audio communication protocols over I2S with cryptographic integration.',
+          'Integrated peripherals (SPI, UART, I2C, CAN, RTC, Flash, EEPROM) with low-power techniques.',
+          'Designed and debugged multi-layer PCBs using Altium and OrCAD.',
+          'Deployed TensorFlow Lite AI models on embedded Linux platforms (Raspberry Pi).',
+          'Produced documentation and validation reports for FIPS 140-2 and MIL-STD compliance.'
         ]
       }
     ]
@@ -105,17 +96,17 @@ const sections = [
     cards: [
       {
         title: 'M.Sc. Electrical Engineering',
-        subtitle: 'National University of Sciences & Technology (NUST), Islamabad — Sep 2017 – Aug 2020',
+        subtitle: 'National University of Sciences & Technology (NUST), Pakistan — Sep 2017 – Aug 2020',
         url: 'https://nust.edu.pk/',
         logo: 'nust.png',
-        points: ['GPA: 3.23/4.0 | First Class Honors']
+        points: ['GPA: 3.3/4.0 | First Class Honors']
       },
       {
         title: 'B.Sc. Electrical Engineering',
-        subtitle: 'COMSATS University, Islamabad — Feb 2013 – Mar 2017',
+        subtitle: 'COMSATS University, Pakistan — Feb 2013 – Mar 2017',
         url: 'https://www.comsats.edu.pk/',
         logo: 'comsats.png',
-        points: ['GPA: 3.41/4.0 | First Class Honors | Final Year Project: OFDM-based Transceiver using USRP in LabVIEW']
+        points: ['GPA: 3.41/4.0 | First Class Honors | Final Year Project: Implementation of OFDM-based Transceiver using USRP in LabVIEW']
       }
     ]
   },
@@ -125,28 +116,28 @@ const sections = [
     type: 'categories',
     categories: [
       {
-        name: 'Programming Languages',
-        tags: ['C/C++ (MISRA)', 'Python', 'Bash', 'JavaScript']
+        name: 'Programming & Frameworks',
+        tags: ['Embedded C/C++ (MISRA)', 'Python', 'FastAPI', 'FreeRTOS', 'Bare-metal', 'Yocto Linux']
       },
       {
         name: 'Microcontrollers & Platforms',
-        tags: ['STM32', 'NXP S32K', 'TI MSP430', 'ESP32', 'NVIDIA Jetson Orin Nano', 'Raspberry Pi', 'BeagleBone Black']
-      },
-      {
-        name: 'Operating Systems',
-        tags: ['Embedded Linux (Yocto)', 'FreeRTOS', 'Bare-metal']
+        tags: ['ARM Cortex-M', 'STM32', 'NXP S32K', 'TI MSP430', 'AVR', 'ESP32', 'SAM', 'NVIDIA Jetson Orin Nano', 'Raspberry Pi']
       },
       {
         name: 'Communication Protocols',
-        tags: ['CAN/CAN-FD', 'LIN', 'J1939', 'OBD-II', 'MODBUS', 'RS485', 'UART', 'SPI', 'I2C', 'BLE']
+        tags: ['CAN/CAN-FD', 'J1939', 'OBD-II', 'LIN', 'MODBUS', 'RS485', 'BLE', 'UART', 'SPI', 'I2C', 'I2S', 'MQTT']
       },
       {
         name: 'AI & Computer Vision',
-        tags: ['YOLO', 'OpenCV', 'TensorFlow Lite', 'PaddleOCR', 'Tesseract', 'Model Quantization']
+        tags: ['YOLO', 'OpenCV', 'PaddleOCR', 'Tesseract OCR', 'TensorFlow Lite', 'PyTorch', 'CNNs', 'Video Analytics', 'Model Quantization', 'GPU Optimization', 'Pandas', 'NumPy']
+      },
+      {
+        name: 'Safety & Security',
+        tags: ['ISO 26262', 'IEC 61850', 'FIPS 140-2', 'MIL-STD-461G', 'Secure Boot', 'Cryptography (AES, SHA, HMAC)']
       },
       {
         name: 'Tools & DevOps',
-        tags: ['Git', 'JIRA', 'Jenkins', 'CANalyzer', 'SavvyCAN', 'Altium', 'CMake']
+        tags: ['CANalyzer', 'Git', 'SVN', 'Jenkins', 'GitHub Actions', 'Jira', 'Confluence', 'CMake', 'Altium', 'OpenOCD', 'Label Studio', 'CVAT']
       }
     ]
   },
@@ -156,7 +147,7 @@ const sections = [
     type: 'table',
     table: [
       { language: 'Urdu', listening: 'Native', reading: 'Native', spoken_production: 'Native', spoken_interaction: 'Native', writing: 'Native' },
-      { language: 'English', listening: 'C1', reading: 'C1', spoken_production: 'C1', spoken_interaction: 'C1', writing: 'C1' },
+      { language: 'English', listening: 'C1', reading: 'C1', spoken_production: 'C1', spoken_interaction: 'C1', writing: 'C1' }
     ]
   },
   {
