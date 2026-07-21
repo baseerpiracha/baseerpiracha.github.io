@@ -1,9 +1,9 @@
-// Data Model
+// Updated Data Model with Latest CV Details
 const sections = [
   {
     id: 'about',
     title: 'About Me',
-    content: `Senior Embedded & Firmware Engineer with 7+ years of experience in automotive, telematics, industrial automation, and secure embedded systems. Specialized in CAN bus reverse engineering, protection relay firmware, and real-time embedded software development. Strong hands-on expertise in C/C++, Python, RTOS (FreeRTOS), embedded Linux (Yocto), and communication protocols including CAN, LIN, J1939, OBD-II, MODBUS, SPI, I2C, and UART. Experienced in ISO 26262, MISRA C, ANSI protection standards, and large-scale field deployments. Currently working in Riyadh on vehicle data, fleet telematics, and real-time embedded systems.`,
+    content: `Senior Embedded & Firmware Engineer with 8+ years of hands-on experience delivering high-reliability embedded systems across automotive telematics, industrial protection relays, secure communication, and Edge AI domains. Specialized in CAN bus reverse engineering, protection relay firmware, automotive infotainment, and military-grade secure embedded systems. Adept at developing real-time embedded software on ARM Cortex-M, MSP430, AVR, STM32, ESP32, NXP S32K, and NVIDIA Jetson platforms. Deep knowledge of communication protocols (CAN, LIN, J1939, OBD-II, MODBUS, SPI, I2C, UART, BLE). Experienced in ISO 26262, MISRA C, ANSI protection standards, secure boot, cryptography, and large-scale field deployments. Currently working in Riyadh on vehicle data, fleet telematics, real-time Edge AI, and computer vision solutions.`,
     type: 'text'
   },
   {
@@ -12,62 +12,88 @@ const sections = [
     type: 'cards',
     cards: [
       {
-        title: 'AFAQY CO IT, Riyadh',
+        title: 'AFAQY IT CO',
         url: 'https://www.afaqy.com',
         logo: 'afaqy.jpeg',
-        subtitle: 'Sr. R&D Engineer — Sep 2025 – Present',
+        subtitle: 'Sr. R&D Engineer — September 2025 – Present',
         points: [
-          'Reverse engineered CAN bus messages for Toyota, Hyundai, MG, Chevrolet, and Ford vehicles.',
+          'Led reverse engineering of CAN bus messages for Toyota, Hyundai, MG, Chevrolet, and Ford vehicles.',
           'Sniffed and decoded CAN traffic using CANalyzer, SavvyCAN, Vehicle Spy, and Python tools.',
-          'Created and validated custom DBC files for telematics integration.',
-          'Developed Xirgo and Galileosky scripts for real-time vehicle diagnostics and fleet analytics.',
-          'Integrated BLE sensors and parsed advertisement and payload data.',
-          'Worked with OBD-II, J1939, and proprietary vehicle protocols.',
-          'Implemented vehicle event detection such as harsh braking, overspeed, and geofencing.',
-          'Led field testing and large-scale deployments across Saudi Arabia.'
+          'Developed and validated custom DBC files for telematics integration.',
+          'Designed real-time data scripts for Xirgo and Galileosky units.',
+          'Integrated BLE sensors with advertisement and payload parsing.',
+          'Validated OBD-II, J1939, and proprietary protocols.',
+          'Developed Lua/Galileosky scripts for harsh braking and geofencing.',
+          'Led large-scale field deployments across Saudi Arabia.',
+          'Developed AI-based VIN and license plate detection using Python, YOLO, and OCR.',
+          'Implemented VIN-aware validation logic and confidence-based character fusion.',
+          'Automated batch image processing with Pandas and NumPy.'
         ]
       },
       {
-        title: 'Innovative Systems, Riyadh',
+        title: 'Innovative Systems',
         url: 'https://www.isys.sa',
         logo: 'isys.png',
-        subtitle: 'Sr. Firmware Engineer — Aug 2023 – Sep 2025',
+        subtitle: 'Sr. Firmware Engineer — August 2023 – September 2025',
         points: [
-          'Designed and implemented firmware for protection relays on TI MSP430 microcontrollers.',
-          'Implemented ANSI 49 / 50 / 51 / 52 protection algorithms.',
-          'Developed secure bootloaders and firmware upgrade mechanisms.',
-          'Integrated MODBUS and RS485 communication stacks.',
-          'Implemented event logging, fault diagnostics, and oscillography.',
-          'Built embedded Linux images using Yocto Project (BeagleBone Black).',
-          'Performed EMI/EMC testing and live power system validation.'
+          'Led Yocto-based Embedded Linux development for TI Sitara AM335x (kernel, device trees, custom layers).',
+          'Designed IEC 61850-compliant real-time firmware and protection algorithms on TI MSP430.',
+          'Developed low-latency drivers (DMA, SPI, I2C, UART) and secure USB/OTA bootloaders.',
+          'Implemented Graphical Frameworks on TouchGFX for display of relay status and parameters.',
+          'Developed and optimized firmware using FreeRTOS.',
+          'Performed limited resources development with strict memory and timing constraints.',
+          'Handled integration and debugging of sub-systems and peripherals.',
+          'Automated CI/CD pipelines with Jenkins and GitHub Actions.'
         ]
       },
       {
-        title: 'Krämer Automotive Systems, Islamabad',
+        title: 'Krämer Automotive Systems GmbH',
         url: 'https://www.kraemer-automotive.com',
         logo: 'kr.png',
-        subtitle: 'Sr. Embedded Software Engineer — Sep 2022 – Aug 2023',
+        subtitle: 'Sr. Embedded Software Engineer — September 2022 – August 2023',
         points: [
-          'Developed firmware for automotive infotainment and instrument clusters.',
-          'Worked on NXP S32K and STM32 (ARM Cortex-M) platforms.',
-          'Implemented CAN, LIN, and UART communication stacks.',
+          'Developed firmware for infotainment systems on NXP S32K and STM32 microcontrollers.',
+          'Optimized CAN, LIN, UART stacks with error detection and diagnostics.',
           'Developed secure bootloaders for OTA and USB updates.',
-          'Performed vehicle-level and HIL testing.',
-          'Ensured ISO 26262 functional safety compliance.'
+          'Validated CAN traffic using Microchip and Vector analyzers for OEM platforms.',
+          'Implemented four-zone HVAC system with RTOS multitasking.',
+          'Worked on Android-based automotive infotainment systems for system integration.',
+          'Performed PCB debugging and hardware validation.',
+          'Ensured ISO 26262 compliance with FMEA and safety mechanisms.',
+          'Managed project lifecycle using Git, Jira, SVN, and Confluence.',
+          'Conducted vehicle-level and HIL testing.'
         ]
       },
       {
-        title: 'Crypto Research & Development Center, Islamabad',
-        url: 'www.https://nastp.gov.pk/',
+        title: 'Crypto Research and Development Center',
+        url: '',
         logo: 'crdc.png',
-        subtitle: 'Embedded Software Lead — Apr 2019 – Aug 2022',
+        subtitle: 'Embedded Software Lead — May 2021 – August 2022',
         points: [
-          'Led secure embedded firmware projects for defense-grade systems.',
-          'Reverse engineered communication protocols using logic analyzers and SDR tools.',
-          'Implemented AES-256, SHA-256, and HMAC-based secure communication stacks.',
-          'Developed low-power embedded firmware on AVR, ESP32, and ARM platforms.',
-          'Built embedded AI applications using TensorFlow Lite on Raspberry Pi.',
-          'Designed schematics and PCB layouts using Altium and OrCAD.'
+          'Managed R&D projects for secure modules and embedded controllers.',
+          'Led collaboration across hardware, software, RF, and QA teams.',
+          'Mentored junior engineers on embedded systems and cryptography.',
+          'Prepared technical documentation including architecture diagrams and APIs.',
+          'Oversaw compliance with FIPS 140-2 and MIL-STD-461G standards.',
+          'Deployed Python-based testing frameworks, reducing validation time by 25%.'
+        ]
+      },
+      {
+        title: 'Crypto Research and Development Center',
+        url: '',
+        logo: 'crdc.png',
+        subtitle: 'Embedded Software Engineer — April 2019 – May 2021',
+        points: [
+          'Designed secure embedded systems compliant with military standards.',
+          'Reverse-engineered communication protocols using analyzers and SDR tools.',
+          'Developed cryptographic stacks using AES-256, SHA-256, and HMAC.',
+          'Engineered firmware for AVR, ESP32, and ARM-based microcontrollers.',
+          'Implemented low-power techniques for battery-powered field devices.',
+          'Built embedded applications for secure audio systems and tracking units.',
+          'Integrated UART, SPI, and CAN interfaces.',
+          'Designed secure boot mechanisms using digital signatures.',
+          'Conducted hardware design and schematic development using Altium and OrCAD.',
+          'Deployed TensorFlow Lite AI models on Raspberry Pi platforms.'
         ]
       }
     ]
@@ -78,21 +104,21 @@ const sections = [
     type: 'cards',
     cards: [
       {
-        title: 'MS Electrical Engineering',
-        subtitle: 'National University of Science and Technology, Islamabad — Sep 2017 – Aug 2020',
+        title: 'M.Sc. Electrical Engineering',
+        subtitle: 'National University of Sciences & Technology (NUST), Islamabad — Sep 2017 – Aug 2020',
         url: 'https://nust.edu.pk/',
         logo: 'nust.png',
-        points: ['Specialized in embedded systems and signal processing.']
+        points: ['GPA: 3.23/4.0 | First Class Honors']
       },
       {
-        title: 'BS Electrical Engineering',
+        title: 'B.Sc. Electrical Engineering',
         subtitle: 'COMSATS University, Islamabad — Feb 2013 – Mar 2017',
         url: 'https://www.comsats.edu.pk/',
         logo: 'comsats.png',
-        points: ['Final Year Project: Implementation of OFDM-based Transceiver using USRP in LabVIEW.']
+        points: ['GPA: 3.41/4.0 | First Class Honors | Final Year Project: OFDM-based Transceiver using USRP in LabVIEW']
       }
     ]
-  },  
+  },
   {
     id: 'skills',
     title: 'Skills',
@@ -100,106 +126,30 @@ const sections = [
     categories: [
       {
         name: 'Programming Languages',
-        tags: ['C/C++', 'Python', 'Bash', 'JavaScript', 'HTML/CSS']
+        tags: ['C/C++ (MISRA)', 'Python', 'Bash', 'JavaScript']
       },
       {
-        name: 'Microcontrollers & SoCs',
-        tags: ['TI MSP430', 'STM32', 'NXP S32K', 'ESP32', 'AVR', 'BeagleBone Black', 'Raspberry Pi']
+        name: 'Microcontrollers & Platforms',
+        tags: ['STM32', 'NXP S32K', 'TI MSP430', 'ESP32', 'NVIDIA Jetson Orin Nano', 'Raspberry Pi', 'BeagleBone Black']
       },
       {
         name: 'Operating Systems',
-        tags: ['FreeRTOS', 'Embedded Linux', 'Yocto']
+        tags: ['Embedded Linux (Yocto)', 'FreeRTOS', 'Bare-metal']
       },
       {
         name: 'Communication Protocols',
-        tags: ['CAN', 'CAN FD', 'LIN', 'J1939', 'OBD-II', 'UART', 'SPI', 'I2C', 'MODBUS', 'RS485', 'BLE']
+        tags: ['CAN/CAN-FD', 'LIN', 'J1939', 'OBD-II', 'MODBUS', 'RS485', 'UART', 'SPI', 'I2C', 'BLE']
       },
       {
-        name: 'Tools & Debugging',
-        tags: ['CANalyzer', 'CANoe', 'SavvyCAN', 'Vehicle Spy', 'Logic Analyzer', 'J-Link', 'ST-Link']
+        name: 'AI & Computer Vision',
+        tags: ['YOLO', 'OpenCV', 'TensorFlow Lite', 'PaddleOCR', 'Tesseract', 'Model Quantization']
       },
       {
-        name: 'DevOps & Management',
-        tags: ['Git', 'GitHub Actions', 'Jenkins', 'JIRA', 'Confluence']
+        name: 'Tools & DevOps',
+        tags: ['Git', 'JIRA', 'Jenkins', 'CANalyzer', 'SavvyCAN', 'Altium', 'CMake']
       }
     ]
   },
-  {
-    id: 'projects',
-    title: 'Projects',
-    type: 'cards',
-    cards: [
-      {
-        title: 'Vehicle CAN Reverse Engineering & Telematics Integration',
-        subtitle: 'AFAQY CO IT',
-        points: [
-          'Reverse engineered OEM CAN messages from Toyota, Hyundai, MG, Chevrolet, and Ford vehicles.',
-          'Decoded signals such as speed, RPM, fuel level, indicators, and fault states.',
-          'Generated and validated custom DBC files for telematics platforms.',
-          'Integrated decoded signals into Xirgo and Galileosky tracking units.'
-        ]
-      },
-      {
-        title: 'Protection Relay Firmware (ANSI Standards)',
-        subtitle: 'Innovative Systems',
-        points: [
-          'Developed industrial protection relay firmware on TI MSP430.',
-          'Implemented ANSI 49, 50, 51, and 52 protection algorithms.',
-          'Added event logging, fault recording, and oscillography features.',
-          'Validated firmware on live power systems.'
-        ]
-      },
-      {
-        title: 'Automotive Infotainment & HVAC Control System',
-        subtitle: 'Krämer Automotive Systems GmbH',
-        points: [
-          'Developed firmware for infotainment and instrument cluster ECUs.',
-          'Implemented four-zone HVAC control using RTOS-based multitasking.',
-          'Designed CAN and LIN communication stacks with timeout and diagnostics logic.',
-          'Performed vehicle-level and HIL testing for OEM validation.',
-          'Ensured ISO 26262 functional safety compliance.'
-        ]
-      },
-      {
-        title: 'Secure Bootloader & OTA Firmware Update',
-        subtitle: 'Krämer Automotive Systems GmbH',
-        points: [
-          'Designed secure bootloader supporting USB and OTA firmware updates.',
-          'Implemented firmware integrity verification and rollback protection.',
-          'Enabled programmer-less firmware upgrades in production vehicles.'
-        ]
-      },
-      {
-        title: 'Secure Embedded Communication System',
-        subtitle: 'Crypto Research & Development Center',
-        points: [
-          'Designed secure embedded systems compliant with military-grade standards.',
-          'Implemented AES-256, SHA-256, and HMAC-based secure communication stacks.',
-          'Reverse engineered proprietary communication protocols using logic analyzers.',
-          'Ensured compliance with FIPS 140-2 security requirements.'
-        ]
-      },
-      {
-        title: 'Embedded AI & Low-Power Systems',
-        subtitle: 'Crypto Research & Development Center',
-        points: [
-          'Deployed TensorFlow Lite models on Raspberry Pi for on-device AI inference.',
-          'Designed low-power firmware for battery-operated embedded devices.',
-          'Integrated BLE, Wi-Fi, UART, SPI, and I2C interfaces.',
-          'Developed CVSD-based audio communication systems.'
-        ]
-      },
-      {
-        title: 'OFDM-based Transceiver using USRP',
-        subtitle: 'BS Electrical Engineering Final Year Project — COMSATS University',
-        points: [
-          'Designed and implemented an OFDM transceiver using USRP and LabVIEW.',
-          'Achieved reliable real-time modulation and demodulation.',
-          'Validated performance under noisy channel conditions.'
-        ]
-      }
-    ]
-  },  
   {
     id: 'languages',
     title: 'Languages',
@@ -215,195 +165,8 @@ const sections = [
     type: 'text',
     content: `Email: <a href="mailto:baseer.piracha@gmail.com">baseer.piracha@gmail.com</a><br>
     Phone: <a href="tel:+966536014390">+966 536014390</a><br>
-    LinkedIn: <a href="https://www.linkedin.com/in/baseer-piracha/" target="_blank" rel="noopener noreferrer">baseer-piracha</a><br>
-    Address: Riyadh, Saudi Arabia`
+    LinkedIn: <a href="https://www.linkedin.com/in/baseer-piracha/" target="_blank" rel="noopener noreferrer">linkedin.com/in/baseer-piracha</a><br>
+    GitHub: <a href="https://github.com/baseerpiracha" target="_blank" rel="noopener noreferrer">github.com/baseerpiracha</a><br>
+    Location: Riyadh, Saudi Arabia`
   }
 ];
-
-// Build Navigation
-const navList = document.getElementById('nav-list');
-sections.forEach(section => {
-  const li = document.createElement('li');
-  li.textContent = section.title;
-  li.dataset.target = section.id;
-  li.setAttribute('tabindex', '0');
-  li.addEventListener('click', () => scrollToSection(section.id));
-  li.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      scrollToSection(section.id);
-    }
-  });
-  navList.appendChild(li);
-});
-
-// Build Content Sections
-const content = document.getElementById('content');
-sections.forEach(section => {
-  const sec = document.createElement('section');
-  sec.id = section.id;
-  sec.classList.add('section');
-  sec.setAttribute('aria-labelledby', `${section.id}-title`);
-
-  const h2 = document.createElement('h2');
-  h2.id = `${section.id}-title`;
-  h2.textContent = section.title;
-  sec.appendChild(h2);
-
-  if (section.type === 'text') {
-    const p = document.createElement('p');
-    p.innerHTML = section.content;
-    sec.appendChild(p);
-  } else if (section.type === 'cards') {
-    const container = document.createElement('div');
-    container.classList.add('exp-list');
-    section.cards.forEach(card => {
-      const cardDiv = document.createElement('div');
-      cardDiv.classList.add('exp-card');
-
-      if (card.logo) {
-        const img = document.createElement('img');
-        img.src = card.logo;
-        img.alt = `${card.title} logo`;
-        img.classList.add('company-logo');
-        img.setAttribute('loading', 'lazy');
-        cardDiv.appendChild(img);
-      }
-
-      const title = document.createElement('h3');
-      if (card.url) {
-        const link = document.createElement('a');
-        link.href = card.url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.textContent = card.title;
-        link.classList.add('company-link');
-        title.appendChild(link);
-      } else {
-        title.textContent = card.title;
-      }
-      cardDiv.appendChild(title);
-
-      const sub = document.createElement('span');
-      sub.textContent = card.subtitle;
-      cardDiv.appendChild(sub);
-
-      const ul = document.createElement('ul');
-      card.points.forEach(point => {
-        const li = document.createElement('li');
-        li.innerHTML = point;
-        ul.appendChild(li);
-      });
-      cardDiv.appendChild(ul);
-
-      container.appendChild(cardDiv);
-    });
-    sec.appendChild(container);
-  } else if (section.type === 'categories') {
-    const categoriesDiv = document.createElement('div');
-    categoriesDiv.classList.add('skills');
-    section.categories.forEach(category => {
-      const categoryDiv = document.createElement('div');
-      categoryDiv.classList.add('skill-category');
-
-      const categoryTitle = document.createElement('h3');
-      categoryTitle.textContent = category.name;
-      categoryDiv.appendChild(categoryTitle);
-
-      const tagsDiv = document.createElement('div');
-      tagsDiv.classList.add('skill-tags');
-      category.tags.forEach(tag => {
-        const tagSpan = document.createElement('span');
-        tagSpan.classList.add('skill-pill');
-        tagSpan.textContent = tag;
-        tagsDiv.appendChild(tagSpan);
-      });
-      categoryDiv.appendChild(tagsDiv);
-      categoriesDiv.appendChild(categoryDiv);
-    });
-    sec.appendChild(categoriesDiv);
-  } else if (section.type === 'table') {
-    const table = document.createElement('table');
-    table.classList.add('language-table');
-    const thead = document.createElement('thead');
-    const headerRow = document.createElement('tr');
-    ['Language', 'Listening', 'Reading', 'Spoken Production', 'Spoken Interaction', 'Writing'].forEach(header => {
-      const th = document.createElement('th');
-      th.textContent = header;
-      headerRow.appendChild(th);
-    });
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-
-    const tbody = document.createElement('tbody');
-    section.table.forEach(row => {
-      const tr = document.createElement('tr');
-      Object.values(row).forEach(value => {
-        const td = document.createElement('td');
-        td.textContent = value;
-        tr.appendChild(td);
-      });
-      tbody.appendChild(tr);
-    });
-    table.appendChild(tbody);
-    sec.appendChild(table);
-  }
-
-  content.appendChild(sec);
-});
-
-// Scroll Helper
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  document.querySelector('.nav-list').classList.remove('active');
-  document.querySelector('.hamburger').classList.remove('active');
-}
-
-// Navbar Active Highlight on Scroll
-const navItems = navList.querySelectorAll('li');
-const sectionElements = sections.map(s => document.getElementById(s.id));
-
-window.addEventListener('scroll', () => {
-  let scrollPos = window.scrollY + window.innerHeight / 3;
-  let current = null;
-  for (let i = 0; i < sectionElements.length; i++) {
-    const sec = sectionElements[i];
-    if (sec.offsetTop <= scrollPos) {
-      current = i;
-    }
-  }
-  navItems.forEach(item => item.classList.remove('active'));
-  if (current !== null && navItems[current]) navItems[current].classList.add('active');
-});
-
-// Contact Button Scroll
-document.getElementById('contact-btn').addEventListener('click', () => {
-  scrollToSection('contact');
-});
-
-// Hamburger Menu Toggle
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav-list');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  nav.classList.toggle('active');
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', (e) => {
-  if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-    nav.classList.remove('active');
-    hamburger.classList.remove('active');
-  }
-});
-
-// Dynamic Background Color Shift on Scroll for Header
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  if (window.scrollY > 50) {
-    header.style.background = 'linear-gradient(90deg, #3498DB, #2C3E50)';
-    header.style.boxShadow = '0 2px 15px rgba(52, 152, 219, 0.5)';
-  } else {
-    header.style.background = 'linear-gradient(90deg, #1A252F, #2C3E50)';
-    header.style.boxShadow = '0 2px 10px rgba(44, 62, 80, 0.5)';
-  }
-});
