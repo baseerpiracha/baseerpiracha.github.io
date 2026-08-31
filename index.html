@@ -1,57 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLTHN9ZJPQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baseer Ahmad Piracha — Senior Embedded &amp; Firmware Engineer</title>
+<meta name="description" content="Baseer Ahmad Piracha — Senior Embedded &amp; Firmware Engineer. 8+ years building safety-critical embedded systems, real-time firmware, and Edge AI solutions for automotive, industrial, and telematics applications.">
+<meta name="theme-color" content="#0B1C2C">
 
-    gtag('config', 'G-PLTHN9ZJPQ');
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Baseer Ahmad Piracha, Embedded Firmware Engineer specializing in C/C++, RTOS, and automotive systems." />
-  <meta name="keywords" content="embedded firmware, C/C++, RTOS, automotive, engineer, portfolio" />
-  <meta name="author" content="Baseer Ahmad Piracha" />
-  <meta property="og:title" content="Baseer Ahmad Piracha - Portfolio" />
-  <meta property="og:description" content="Embedded Firmware Engineer with expertise in C/C++, RTOS, and automotive systems." />
-  <meta property="og:image" content="profile.jpg" />
-  <meta property="og:url" content="https://yourwebsite.com" />
-  <title>Baseer Ahmad Piracha - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Fonts: Playfair Display (headings) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Baseer Ahmad Piracha</h1>
-    <nav>
-      <button class="hamburger" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul id="nav-list" class="nav-list"></ul>
+
+<!-- ============ SKIP LINK (ACCESSIBILITY) ============ -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ STICKY NAVIGATION ============ -->
+<header class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">B.A.P</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#education" class="nav-link" data-section="education">Education</a>
+      <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section id="hero">
-    <img src="profile.jpg" alt="Baseer Ahmad Piracha, Embedded Firmware Engineer" class="hero-pic" loading="lazy" />
-    <h2>Hello, I’m <span>Baseer Ahmad Piracha</span></h2>
-    <p>Embedded Firmware Engineer | C/C++ | Automotive & Industrial Systems</p>
-    <button id="contact-btn" aria-label="Scroll to contact section">Contact Me</button>
-  </section>
+<main id="main">
 
-  <main id="content" role="main"></main>
+<!-- ============ 1. HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <!-- Restrained abstract circuit / line-art motif (pure SVG, decorative) -->
+  <svg class="hero-motif" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#C9A227" stroke-width="1">
+      <line x1="80" y1="120" x2="80" y2="680"/>
+      <line x1="80" y1="120" x2="260" y2="120"/>
+      <circle cx="80" cy="120" r="5" fill="#C9A227"/>
+      <circle cx="260" cy="120" r="5" fill="#C9A227"/>
+      <line x1="1120" y1="90" x2="1120" y2="400"/>
+      <line x1="1120" y1="400" x2="950" y2="400"/>
+      <circle cx="1120" cy="90" r="5" fill="#C9A227"/>
+      <circle cx="950" cy="400" r="5" fill="#C9A227"/>
+      <line x1="950" y1="400" x2="950" y2="620"/>
+      <circle cx="950" cy="620" r="5" fill="#C9A227"/>
+      <line x1="300" y1="700" x2="620" y2="700"/>
+      <circle cx="620" cy="700" r="5" fill="#C9A227"/>
+      <line x1="620" y1="700" x2="620" y2="560"/>
+      <circle cx="620" cy="560" r="5" fill="#C9A227"/>
+    </g>
+  </svg>
 
-  <footer>
-    <p>&copy; 2026 Baseer Ahmad Piracha. All rights reserved.</p>
-  </footer>
+  <div class="hero-content fade-in">
+    <p class="hero-kicker">Embedded Systems &middot; Edge AI &middot; Safety-Critical Engineering</p>
+    <h1 class="hero-name">BASEER AHMAD<br>PIRACHA</h1>
+    <p class="hero-subtitle">Senior Embedded &amp; Firmware Engineer | Edge AI &middot; Automotive &middot; Safety-Critical Systems</p>
+    <p class="hero-statement">Eight years spent turning silicon and software into systems that must not fail — from cryptographic modules certified against FIPS 140-2, to Edge AI vision platforms guarding drivers in real time across Saudi Arabia's roads.</p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-primary">View Experience</a>
+      <a href="assets/Baseer-Ahmad-Piracha-CV.pdf" class="btn btn-secondary" download>Download CV</a>
+      <a href="#contact" class="btn btn-ghost">Contact</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ============ 2. ABOUT ============ -->
+<section id="about" class="section about">
+  <div class="section-inner about-grid">
+    <div class="about-portrait fade-in">
+      <!-- Professional photo placeholder — replace src with real headshot -->
+      <div class="portrait-frame">
+        <img src="assets/img/profile.jpg" alt="Portrait of Baseer Ahmad Piracha" loading="lazy">
+      </div>
+    </div>
+    <div class="about-copy fade-in">
+      <p class="eyebrow">About</p>
+      <h2>Engineering that holds under pressure.</h2>
+      <p class="lead">
+        Baseer designs and ships high-reliability embedded systems, real-time firmware, and Edge AI
+        solutions across automotive, industrial, and telematics domains. His work spans bare-metal
+        C/C++ under MISRA discipline, RTOS architectures on FreeRTOS and Zephyr, and Embedded Linux
+        builds on Yocto — deployed on platforms from STM32 and NXP S32K to NVIDIA Jetson Orin Nano
+        and Kendryte CanMV K230.
+      </p>
+      <p class="lead">
+        He has led secure boot implementations, OTA firmware pipelines, and cryptographic modules
+        compliant with ISO 26262 and FIPS 140-2, while directing cross-functional teams through
+        certification, field deployment, and large-scale system rollout.
+      </p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">40–50%</span>
+          <span class="stat-label">Edge AI Efficiency Gains</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">ISO 26262<br>FIPS 140-2</span>
+          <span class="stat-label">Safety &amp; Security Standards</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">STM32 &middot; S32K<br>Jetson &middot; MSP430</span>
+          <span class="stat-label">Core Platforms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. EXPERIENCE ============ -->
+<section id="experience" class="section experience">
+  <div class="section-inner">
+    <p class="eyebrow center">Experience</p>
+    <h2 class="section-title center">A record of systems shipped, not just designed.</h2>
+
+    <div class="timeline">
+
+      <!-- Role 1 -->
+      <article class="timeline-item fade-in">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-logo">
+          <!-- Text-based placeholder logo — replace with real SVG logo -->
+          <img src="assets/logos/afaqy_logo.jpg" alt="AFAQY IT CO logo">
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-head">
+            <h3>Sr. R&amp;D Embedded Software Engineer</h3>
+            <span class="timeline-date">Oct 2025 — Present</span>
+          </div>
+          <p class="timeline-org">AFAQY IT CO &middot; Riyadh, Saudi Arabia</p>
+          <ul class="timeline-list">
+            <li>Architected real-time Edge AI vision systems on Jetson Orin Nano and CanMV K230, automating driver behaviour monitoring and cutting manual review effort by 40–50%.</li>
+            <li>Optimized multi-stream YOLO and OCR pipelines for constrained edge hardware, enabling 30%+ more concurrent camera streams on the same silicon.</li>
+            <li>Engineered FastAPI and Docker microservices for AI inference, shortening model integration and rollout time by roughly 35%.</li>
+            <li>Directed CAN bus reverse engineering and DBC development across multiple vehicle brands, accelerating telematics integration by 25–30%.</li>
+            <li>Built automated CAN signal decoding pipelines that raised protocol analysis speed by 40% and cut field troubleshooting time.</li>
+            <li>Led large-scale fleet deployments across Saudi Arabia, delivering rollouts with minimal post-deployment issues.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Role 2 -->
+      <article class="timeline-item fade-in">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-logo">
+          <img src="assets/logos/isys.png" alt="ISYS logo">
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-head">
+            <h3>Sr. Firmware Engineer</h3>
+            <span class="timeline-date">Aug 2023 — Sep 2025</span>
+          </div>
+          <p class="timeline-org">Innovative Systems &middot; Riyadh, Saudi Arabia</p>
+          <ul class="timeline-list">
+            <li>Delivered real-time protection relay firmware on TI MSP430, strengthening product reliability and reducing field failure rates.</li>
+            <li>Implemented ANSI 49/50/51/52 protection algorithms and fault-recording logic, sharpening protection accuracy and fault analysis speed.</li>
+            <li>Designed secure bootloaders and remote firmware-update mechanisms, cutting manual update effort by 50%+.</li>
+            <li>Integrated MODBUS and RS485 protocols for SCADA interoperability, reducing customer integration support requests.</li>
+            <li>Ran live power-system validation and rigorous testing, lowering post-release defects and raising deployment confidence.</li>
+            <li>Led debugging and performance tuning that improved system stability and cut critical field issues by roughly 30%.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Role 3 -->
+      <article class="timeline-item fade-in">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-logo">
+          <img src="assets/logos/kr.png" alt="Krämer logo">
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-head">
+            <h3>Senior Embedded Software Engineer</h3>
+            <span class="timeline-date">Sep 2022 — Aug 2023</span>
+          </div>
+          <p class="timeline-org">Krämer Automotive Systems GmbH &middot; Islamabad, Pakistan</p>
+          <ul class="timeline-list">
+            <li>Developed vehicle infotainment firmware on NXP S32K and STM32 (Arm Cortex-M), raising system reliability by 40% through robust CAN and timeout logic.</li>
+            <li>Built secure boot and bootloader systems enabling seamless, programmer-less MCU firmware updates.</li>
+            <li>Implemented a four-zone HVAC system, coordinating blower, temperature, and vent control through modular RTOS tasks with queues, semaphores, and mutexes.</li>
+            <li>Validated CAN data using Microchip CAN Analyzer and Vector CANalyzer, achieving 98% unit test coverage across infotainment features.</li>
+            <li>Applied ISO 26262 functional safety principles throughout automotive software development and risk assessment.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Role 4 -->
+      <article class="timeline-item fade-in">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-logo">
+          <img src="assets/logos/crdc.png" alt="Crypto Research and Development Center logo">
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-head">
+            <h3>Embedded Software Lead</h3>
+            <span class="timeline-date">May 2021 — Aug 2022</span>
+          </div>
+          <p class="timeline-org">Crypto Research and Development Center &middot; Islamabad, Pakistan</p>
+          <ul class="timeline-list">
+            <li>Led a cross-functional team of 5–7 engineers across firmware, hardware, RF, and QA to deliver secure embedded systems and cryptographic modules.</li>
+            <li>Defined system architecture and coding standards that reduced integration issues by approximately 25%.</li>
+            <li>Implemented AES-256, SHA-256, and HMAC cryptographic algorithms with secure boot mechanisms for high-security requirements.</li>
+            <li>Oversaw compliance with FIPS 140-2, Common Criteria, and MIL-STD-461G, securing successful certification with reduced rework.</li>
+            <li>Introduced Python-based automated test frameworks, cutting validation time by 25% while improving coverage.</li>
+          </ul>
+
+          <div class="timeline-head">
+            <h3>Embedded Software Engineer</h3>
+            <span class="timeline-date">Apr 2019 — May 2021</span>
+          </div>
+          <p class="timeline-org">Crypto Research and Development Center &middot; Islamabad, Pakistan</p>
+          <ul class="timeline-list">
+            <li>Designed secure embedded firmware in C/C++ for AVR, ESP32, STM32, and SAM microcontrollers.</li>
+            <li>Reverse-engineered proprietary radio protocols using logic analyzers and SDR tooling to enable robust secure communications.</li>
+            <li>Implemented AES-256, DES, and SHA-256 cryptographic protection with secure boot mechanisms for data integrity.</li>
+            <li>Built real-time, low-latency secure audio communication protocols over I2S.</li>
+            <li>Deployed TensorFlow Lite models on Raspberry Pi for on-device image classification and edge inference.</li>
+            <li>Designed multi-layer PCB schematics and layouts in Altium and OrCAD, and authored validation reports supporting FIPS 140-2 and MIL-STD compliance.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. PROJECTS ============ -->
+<section id="projects" class="section projects">
+  <div class="section-inner">
+    <p class="eyebrow center">Selected Work</p>
+    <h2 class="section-title center">Technical highlights.</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card fade-in">
+        <h3>Real-Time Edge AI Driver Behaviour &amp; Fleet Safety System</h3>
+        <p>End-to-end vision pipeline detecting driver behaviour, fatigue, and fleet safety events directly on-device across a distributed vehicle fleet.</p>
+        <div class="tag-row">
+          <span class="tag">Jetson Orin Nano</span>
+          <span class="tag">CanMV K230</span>
+          <span class="tag">YOLO</span>
+          <span class="tag">OCR</span>
+        </div>
+        <p class="impact">Impact: cut manual monitoring effort by 40–50% across deployed fleets.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>Multi-Stream Video Analytics for Constrained Edge Devices</h3>
+        <p>Inference optimization work enabling multiple simultaneous camera streams on limited edge compute without sacrificing detection accuracy.</p>
+        <div class="tag-row">
+          <span class="tag">Edge AI</span>
+          <span class="tag">YOLO</span>
+          <span class="tag">Model Optimization</span>
+        </div>
+        <p class="impact">Impact: 30%+ increase in concurrent streams on identical hardware.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>CAN Bus Reverse Engineering &amp; Automated DBC Pipeline</h3>
+        <p>Automated signal decoding and DBC generation pipeline built to accelerate telematics integration across multiple vehicle brands.</p>
+        <div class="tag-row">
+          <span class="tag">CAN / CAN-FD</span>
+          <span class="tag">DBC</span>
+          <span class="tag">SavvyCAN</span>
+          <span class="tag">CANalyzer</span>
+        </div>
+        <p class="impact">Impact: accelerated integration timelines by 25–30%.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>Real-Time Protection Relay Firmware</h3>
+        <p>Safety-critical relay firmware implementing ANSI 49/50/51/52 protection functions with fault recording for power system validation.</p>
+        <div class="tag-row">
+          <span class="tag">TI MSP430</span>
+          <span class="tag">ANSI Protection</span>
+          <span class="tag">IEC 61850</span>
+        </div>
+        <p class="impact">Impact: reduced field failure rates and sharpened fault-analysis accuracy.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>Secure Bootloaders &amp; OTA Firmware Update System</h3>
+        <p>Bootloader and remote update architecture enabling safe, programmer-less firmware delivery across deployed device fleets.</p>
+        <div class="tag-row">
+          <span class="tag">Secure Boot</span>
+          <span class="tag">OTA</span>
+          <span class="tag">Cryptography</span>
+        </div>
+        <p class="impact">Impact: cut manual update effort by 50%+.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>Four-Zone HVAC Control on Automotive RTOS</h3>
+        <p>Modular RTOS task architecture controlling blower, temperature, and vent zones with inter-task synchronization for automotive infotainment systems.</p>
+        <div class="tag-row">
+          <span class="tag">NXP S32K</span>
+          <span class="tag">STM32</span>
+          <span class="tag">FreeRTOS</span>
+        </div>
+        <p class="impact">Impact: 98% test coverage; 40% reliability improvement via robust CAN logic.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>Cryptographic Secure Embedded Modules</h3>
+        <p>Security modules implementing AES-256, SHA-256, and HMAC with secure boot, engineered to meet FIPS 140-2 and Common Criteria requirements.</p>
+        <div class="tag-row">
+          <span class="tag">AES-256</span>
+          <span class="tag">SHA-256</span>
+          <span class="tag">FIPS 140-2</span>
+        </div>
+        <p class="impact">Impact: successful certification with reduced rework across the program.</p>
+      </article>
+
+      <article class="project-card fade-in">
+        <h3>Secure Audio over I2S with TFLite Edge Classification</h3>
+        <p>Low-latency secure audio communication protocol over I2S paired with on-device TensorFlow Lite classification for edge inference.</p>
+        <div class="tag-row">
+          <span class="tag">I2S</span>
+          <span class="tag">TensorFlow Lite</span>
+          <span class="tag">Raspberry Pi</span>
+        </div>
+        <p class="impact">Impact: real-time, low-latency secure audio pipeline with on-device inference.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. SKILLS ============ -->
+<section id="skills" class="section skills">
+  <div class="section-inner">
+    <p class="eyebrow center">Capabilities</p>
+    <h2 class="section-title center">Skills &amp; technical range.</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-category fade-in">
+        <h3>Languages &amp; Frameworks</h3>
+        <div class="tag-row">
+          <span class="tag">Embedded C</span><span class="tag">C/C++</span><span class="tag">Python</span>
+          <span class="tag">MicroPython</span><span class="tag">MATLAB</span><span class="tag">LabVIEW</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Embedded Platforms</h3>
+        <div class="tag-row">
+          <span class="tag">STM32</span><span class="tag">NXP S32K</span><span class="tag">TI MSP430</span>
+          <span class="tag">ESP32</span><span class="tag">Atmel 8/32-bit</span><span class="tag">Arm Cortex-M</span>
+          <span class="tag">Jetson Orin Nano</span><span class="tag">CanMV K230</span><span class="tag">BeagleBone Black</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Operating Systems &amp; RTOS</h3>
+        <div class="tag-row">
+          <span class="tag">FreeRTOS</span><span class="tag">Zephyr</span><span class="tag">Embedded Linux (Yocto)</span>
+          <span class="tag">Ubuntu / Xubuntu</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Communication Protocols</h3>
+        <div class="tag-row">
+          <span class="tag">CAN / CAN-FD</span><span class="tag">J1939</span><span class="tag">OBD-II</span>
+          <span class="tag">UART</span><span class="tag">SPI</span><span class="tag">I2C</span><span class="tag">I2S</span>
+          <span class="tag">MODBUS</span><span class="tag">RS485</span><span class="tag">BLE</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Hardware &amp; Debuggers</h3>
+        <div class="tag-row">
+          <span class="tag">JTAG</span><span class="tag">ST-Link</span><span class="tag">TI MSP-FET</span>
+          <span class="tag">Atmel ICE</span><span class="tag">Ozone J-Link</span><span class="tag">Logic Analyzer</span>
+          <span class="tag">Oscilloscope</span><span class="tag">USRP</span><span class="tag">CANoe</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Computer Vision &amp; Edge AI</h3>
+        <div class="tag-row">
+          <span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">TensorFlow / Keras</span>
+          <span class="tag">TensorFlow Lite</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Safety, Security &amp; Standards</h3>
+        <div class="tag-row">
+          <span class="tag">ISO 26262</span><span class="tag">IEC 61850</span><span class="tag">FIPS 140-2</span>
+          <span class="tag">MIL-STD-461G</span><span class="tag">Common Criteria</span><span class="tag">MISRA C</span>
+          <span class="tag">Secure Boot</span><span class="tag">AES / SHA / HMAC</span>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in">
+        <h3>Tools &amp; Project Management</h3>
+        <div class="tag-row">
+          <span class="tag">Git / GitHub / GitLab</span><span class="tag">Docker</span><span class="tag">JIRA</span>
+          <span class="tag">SVN</span><span class="tag">Confluence</span><span class="tag">Altium</span><span class="tag">OrCAD</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. EDUCATION ============ -->
+<section id="education" class="section education">
+  <div class="section-inner">
+    <p class="eyebrow center">Education</p>
+    <h2 class="section-title center">Academic foundation.</h2>
+
+    <div class="edu-grid">
+      <div class="edu-card fade-in">
+        <div class="timeline-logo">
+          <img src="assets/logos/nust.png" alt="NUST logo">
+        </div>
+        <div class="edu-copy">
+          <h3>MS Electrical Engineering</h3>
+          <p class="edu-meta">National University of Science and Technology (NUST) &middot; Islamabad &middot; 2017 – 2020</p>
+          <p class="edu-thesis"><strong>Thesis:</strong> Segmentation of 3D Dental Models.</p>
+          <ul class="edu-list">
+            <li>Face recognition using k-NN and Bayes classifiers with PCA/LDA on the CMU PIE dataset (MATLAB).</li>
+            <li>SVM-based classification of cancer data, focused on generalization and robustness.</li>
+            <li>Fuzzy logic controller for temperature regulation in MATLAB/Simulink.</li>
+            <li>FPGA-based signal processing in Verilog.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu-card fade-in">
+        <div class="timeline-logo">
+          <img src="assets/logos/comsats.png" alt="COMSATS logo">
+        </div>
+        <div class="edu-copy">
+          <h3>BS Electrical Engineering</h3>
+          <p class="edu-meta">COMSATS Institute of Information Technology &middot; Islamabad &middot; 2013 – 2017</p>
+          <p class="edu-thesis"><strong>Thesis:</strong> Implementation of an OFDM-Based Transceiver Using USRP in LabVIEW.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. CERTIFICATIONS ============ -->
+<section id="certifications" class="section certifications">
+  <div class="section-inner">
+    <p class="eyebrow center">Certifications &amp; Affiliations</p>
+    <h2 class="section-title center">Standing &amp; recognition.</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card fade-in">
+        <h4>ARM® Cortex®-M Architecture Overview</h4>
+        <p>Microchip Technology Inc. &middot; 2025</p>
+      </div>
+      <div class="cert-card fade-in">
+        <h4>Jira SCRUM Project Management</h4>
+        <p>Coursera &middot; 2024</p>
+      </div>
+      <div class="cert-card fade-in">
+        <h4>Embedded Systems: STM32 HAL APIs Driver Development</h4>
+        <p>Udemy &middot; 2022</p>
+      </div>
+      <div class="cert-card fade-in">
+        <h4>Saudi Council of Engineers</h4>
+        <p>Member &middot; Riyadh, Saudi Arabia &middot; Since 2024</p>
+      </div>
+      <div class="cert-card fade-in">
+        <h4>Pakistan Engineering Council</h4>
+        <p>Member &middot; Islamabad, Pakistan &middot; Since 2017</p>
+      </div>
+      <div class="cert-card fade-in">
+        <h4>Acknowledgment &amp; Appreciation Certificate</h4>
+        <p>Ministry of Hajj and Umrah, Saudi Arabia &middot; 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. CONTACT / FOOTER ============ -->
+<footer id="contact" class="site-footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-intro fade-in">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something that has to work.</h2>
+      <p class="footer-open">Open to opportunities in Embedded Systems, Edge AI, Automotive Firmware, and Safety-Critical Development.</p>
+    </div>
+    <div class="footer-details fade-in">
+      <a class="footer-link" href="mailto:baseer.piracha@gmail.com">baseer.piracha@gmail.com</a>
+      <a class="footer-link" href="https://www.linkedin.com/in/baseer-piracha/" target="_blank" rel="noopener">linkedin.com/in/baseer-piracha</a>
+      <a class="footer-link" href="tel:+966536014390">+966 536014390</a>
+      <span class="footer-link footer-location">Riyadh, Saudi Arabia</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Baseer Ahmad Piracha. All rights reserved.</p>
+  </div>
+</footer>
+
+</main>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
